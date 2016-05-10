@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
+		<title>个人简历</title>
+		<script type="text/javascript" src="js/rem.js"></script>
+		<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script type="text/javascript" src="js/swiper.animate.min.js"></script>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="radio-out" id="radio-out">
+			<audio id="myAudio" loop src="http://wyqlife.top/weichat1/mp3/miss.mp3">
+			</audio>
+			<div class="radio">
+
+			</div>
+			<div class="radio-img">
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+				var mp3 = $(".radio")
+				var myAudio = $("#myAudio")[0]
+				var flage = 1
+
+				function auto() {
+					if (flage == 1) {
+						if (myAudio.paused) {
+							myAudio.play();
+						}
+						$(".radio").css({
+							background: "url('http://wyqlife.top/weichat1/img/yinyue.gif') no-repeat",
+							backgroundSize: "cover"
+						})
+						flage = 0
+					}
+				}
+				$(".tou").on("touchend", auto)
+				mp3.click(function() {
+					if (myAudio.paused) {
+						mp3.className = "pause";
+						myAudio.play();
+					} else {
+						mp3.className = "play";
+						myAudio.pause();
+					}
+					if (myAudio.paused) {
+						$(".radio-img").css("animation-play-state", "paused");
+						$(".radio").css({
+							background: "none"
+						})
+						flage = 0;
+					} else {
+						$(".radio-img").css("animation-play-state", "running");
+						$(".radio").css({
+							background: "url('http://wyqlife.top/weichat1/img/yinyue.gif') no-repeat",
+							backgroundSize: "cover"
+						})
+						flage = 1;
+					}
+				})
+				var myvideo = $("#myVideo")[0];
+				$("#myVideo").on("click", function() {
+					var myvideo = $("#myVideo")[0];
+					if (myAudio.paused) {
+						mp3.className = "pause";
+						myAudio.play();
+					} else {
+						mp3.className = "play";
+						myAudio.pause();
+					}
+					if (myvideo.paused) {
+						myvideo.play()
+						$(".vide-btn").css({
+							opacity: 0
+						})
+						$(".meng").css({
+							display: "none"
+						})
+					} else {
+						myvideo.pause()
+						$(".vide-btn").css({
+							opacity: 1
+						})
+						$(".meng").css({
+							display: "block"
+						})
+					}
+				})
+				$(".vide-btn").on("click", function() {
+					var myvideo = $("#myVideo")[0];
+					if (myAudio.paused) {
+						mp3.className = "pause";
+						myAudio.play();
+					} else {
+						mp3.className = "play";
+						myAudio.pause();
+					}
+					if (myvideo.paused) {
+						myvideo.play()
+						$(".vide-btn").css({
+							opacity: 0
+						})
+						$(".meng").css({
+							display: "none"
+						})
+					} else {
+						myvideo.pause()
+						$(".vide-btn").css({
+							opacity: 1
+						})
+						$(".meng").css({
+							display: "block"
+						})
+					}
+				})
+			});
+		</script>
+
+		<!-----swiper------>
+		<div class="swiper-container">
+
+			<div class="swiper-wrapper">
+				<!--------slide1-------->
+				<div class="swiper-slide ss1">
+					<div class="ss ss1-1">
+						<img src="img/side1/3bbb2735-c444-44ca-a879-aeb8d802ddbe-0347.png" />
+					</div>
+					<div class="ani ss ss1-2" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3.5s">
+						<img src="img/side1/302b9264-f279-409f-ad28-a1a7342696dd-1580.png" />
+					</div>
+					<div class="ss ss1-3">
+						<img src="img/side1/edd7f611-f8e2-4057-9109-b15c0ddac0ea-6431.png" />
+					</div>
+					<div class="ani ss ss1-4" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3.5s">
+						<img src="img/side1/a1c099b4-aa44-4917-a336-72178b6d0f63-7726.png" />
+					</div>
+					<div class="ss ss1-5">
+						<img src="img/side1/9107bbab-0397-42c8-b4ac-854603abea75-7763.png" />
+					</div>
+					<div class="ani ss ss1-6" swiper-animate-effect="rotateInUpLeft" swiper-animate-duration="1s" swiper-animate-delay="3.5s">
+						<img src="img/side1/ae716f85-7b5a-4379-8814-e8c512f9b2e0-9257.png" />
+					</div>
+					<div class="ani ss ss1-7" swiper-animate-effect="rotate2d" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+						<img src="img/side1/4cd7dd7f-778e-47b3-8258-fd9255ff5883-9272.png" />
+					</div>
+					<div class="ani ss ss1-8" swiper-animate-effect="rotate2d" swiper-animate-duration="1s" swiper-animate-delay="3.5s">
+						<img src="img/side1/50a1d533-8379-4e0e-8599-5e074d543f04-6714.png" />
+					</div>
+					<div class="ani ss ss1-9" swiper-animate-effect="bounceIn" swiper-animate-duration="0.6s" swiper-animate-delay="2.5s">
+						<img src="img/side1/983aa0a1-8187-4daa-8531-b759d7b5d9c6-3881.png" />
+					</div>
+					<div class="ani ss ss1-10" swiper-animate-effect="bounceIn" swiper-animate-duration="0.6s" swiper-animate-delay="2.5s">
+						<img src="img/side1/2966d32d-054b-42c3-a2d6-19f0387593ac-4326.jpg" style="border-radius: 50%;" />
+					</div>
+					<div class="ani ss ss1-11" swiper-animate-effect="slideRight" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+						<img src="img/side1/1995b0f5-8281-4a08-b94a-272f55a60dc3-8826.png" />
+					</div>
+					<div class="ani ss ss1-12" swiper-animate-effect="slideLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+						<img src="img/side1/9c22e9a9-a2e3-43df-ac99-30fe74d307d7-3162.png" />
+					</div>
+					<div class="ani ss ss1-13" swiper-animate-effect="slideRightandBounceOut" swiper-animate-duration="2s" swiper-animate-delay="1.5s">
+						<img style="display: block;" src="img/side1/2a20bb9a-1987-4318-80af-cee19be39933-7423.png" />
+					</div>
+					<div class="ani ss ss1-14" swiper-animate-effect="slideRight" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+						<img src="img/side1/ee20bca4-abf4-4595-8589-7b31c320b665-6103.png" />
+					</div>
+					<div class="ani ss ss1-15" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="3.5s">
+						<img src="img/side1/05bd52b3-90f2-4479-9603-7be00cb5feec-1801.png" />
+					</div>
+					<div class="ani ss ss1-16" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="3.7s">
+						<div class="ss-inner" >
+							<div style="color: rgb(255, 255, 255);">万郁青</div>
+						</div>
+					</div>
+				</div>
+
+				<!--------slide2-------->
+				<!--<div class="swiper-slide swiper-slide2">
+					<div class="ss ss2-1">
+						<img src="img/side2/192d4480-a55a-4af8-9dd7-8ea23b86a10c-8479.png"/>
+					</div>
+					<div class="ani ss ss2-2" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="4.5s">
+						<img src="img/side2/41c1065c-5f2f-4fe1-86c2-e693090208ab-7088.png" />
+					</div>
+					<div class="ani ss ss2-3" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+						<img src="img/side2/0e54a978-02c6-4e5b-bcc6-708d34dabf52-5328.png"/>
+					</div>
+					<div class="ani ss ss2-4" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+						<img src="img/side2/d3b4ad6a-f078-4507-bcb8-2568eef870da-2871.png" />
+					</div>
+					<div class="ani ss ss2-5" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+						<img style="opacity: 0.2;" src="img/side2/a77d8eca-db4d-4154-8ec9-8e5a9e59eeac-0610.png" />
+					</div>
+					<div class="ani ss ss2-6" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="5s">
+						<img style="opacity: 0.2;" src="img/side2/f43f053d-21bd-4124-918e-448235c68fe5-0574.png" />
+					</div>
+					<div class="ani ss ss2-7" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+						<img src="img/side2/3680aea2-3480-42f4-8cb9-943ad8464770-3508.png" />
+					</div>
+					<div class="ani ss ss2-8" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="3.5s">
+						<img src="img/side2/66216b93-4ce8-4b65-b7a2-83bb997b146f-5438.png"/>
+					</div>
+					<div class="ani ss ss2-9" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="5s">
+						<img src="img/side2/d57a6482-5118-4287-b896-195f309f57dd-2102.png"/>
+					</div>
+					<div class="ani ss ss2-10" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="5.5s">
+						<img src="img/side2/5d133b6c-1ece-4bdb-ba35-5b6af504e57a-1067.png"/>
+					</div>
+					<div class="ani ss ss2-11"  swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="5.5s">
+						<img src="img/side2/b11d1e4f-681f-4312-9cba-32adcdfff1a9-2931.png" />
+					</div>
+				</div>-->
+
+				<!--------slide3-------->
+				<div class="swiper-slide swiper-slide3">
+					<div class="ani ss ss3-1"  swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+						<img src="img/side3/ccd94ef7-5f34-4101-84f9-2d87e37c0181-6656.png" />
+					</div>
+					<div class="ani ss ss3-2" swiper-animate-effect="slideDown" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+						<img src="img/side3/3b68cc19-2525-4cdb-b906-9d0f15016f6b-9110.png" />
+					</div>
+					<div class="ani ss ss3-3" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+						<img src="img/side3/line.png" />
+					</div>
+					<div class="ani ss ss3-4" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+						<img src="img/side3/circle.png" />
+					</div>
+					<div class="ani ss ss3-5" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+						<img src="img/side3/8be1151f-87ef-479c-992d-5292dfcaa604-5416.png" />
+					</div>
+					<div class="ani ss ss3-6" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="3.5s">
+						<img src="img/side3/circle.png" />
+					</div>
+					<div class="ani ss ss3-7" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="3.5s">
+						<img src="img/side3/b7833cba-56fd-4cd7-ad76-8fd1c327e0c7-5007.png" />
+					</div>
+					<div class="ani ss ss3-8" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="4.5s">
+						<img src="img/side3/circle.png" />
+					</div>
+					<div class="ani ss ss3-9" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="4.5s">
+						<img src="img/side3/8be1151f-87ef-479c-992d-5292dfcaa604-5416.png" />
+					</div>
+					<div class="ani ss ss3-10" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="5.5s">
+						<img src="img/side3/circle.png" />
+					</div>
+					<div class="ani ss ss3-11" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="5.5s">
+						<img src="img/side3/b7833cba-56fd-4cd7-ad76-8fd1c327e0c7-5007.png" />
+					</div>
+					<div class="ani ss ss3-12 " swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+						<div style="color: rgb(45, 116, 156); font-weight: 700; font-size: 0.28rem;text-align: center;">自营电脑店4年</div>
+					</div>
+					<div class="ani ss ss3-13 " swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+						<div style="color: rgb(45, 116, 156); font-weight: normal; font-size: 0.28rem;text-align: center;">自营电脑店4年</div>
+						<div style="color: rgb(45, 116, 156); font-weight: normal; font-size: 0.28rem;text-align: center;">自营电脑店4年</div>
+						<div style="color: rgb(45, 116, 156); font-weight: normal; font-size: 0.28rem;text-align: center;">自营电脑店4年</div>
+					</div>
+					<div class="ani ss ss3-14 " swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="3.5s">
+						<div style="color: rgb(25, 170, 0); font-weight: 700; font-size: 0.28rem;">食品厂销售</div>
+					</div>
+					<div class="ani ss ss3-15 " swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="3.5s">
+						<div style="color: rgb(160, 6, 255); font-weight: normal; font-size: 0.28rem;text-align: center;">自营电脑店4年</div>
+						<div style="color: rgb(160, 6, 255); font-weight: normal; font-size: 0.28rem;text-align: center;">自营电脑店4年</div>
+						<div style="color: rgb(160, 6, 255); font-weight: normal; font-size: 0.28rem;text-align: center;">自营电脑店4年</div>
+					</div>
+					<div class="ani ss ss3-16 " swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="4.5s">
+						<div style="color: rgb(217, 41, 64); font-weight: 700; font-size: 0.28rem;text-align: center;">自主网络创业</div>
+					</div>
+					<div class="ani ss ss3-17 " swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="4.5s">
+						<div style="color: rgb(217, 41, 64); font-weight: normal; font-size: 0.28rem;text-align: center;">自营电脑店4年</div>
+						<div style="color: rgb(217, 41, 64); font-weight: normal; font-size: 0.28rem;text-align: center;">自营电脑店4年</div>
+						<div style="color: rgb(217, 41, 64); font-weight: normal; font-size: 0.28rem;text-align: center;">自营电脑店4年</div>
+					</div>
+					<div class="ani ss ss3-18 " swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="5.5s">
+						<div style="color: rgb(242, 134, 21); font-weight: 700; font-size: 0.28rem;">食品厂销售</div>
+					</div>
+					<div class="ani ss ss3-19 " swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="5.5s">
+						<div style="color: rgb(30, 150, 92); font-weight: normal; font-size: 0.28rem;text-align: center;">自营电脑店4年</div>
+					</div>
+					<div class="ani ss ss3-20" swiper-animate-effect="slideRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+						<img src="img/side3/e4a0d3a9-5109-4126-bbbc-19b76980256f-6275.png" />
+					</div>
+					<div class="ani ss ss3-21" swiper-animate-effect="slideLeft" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+						<img src="img/side3/b8db3939-04f1-487e-95d6-9c8112dbe0bb-4653.png" />
+					</div>
+					<div class="ani ss ss3-22" swiper-animate-effect="slideRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+						<img src="img/side3/cc5b10fc-546a-4228-9634-72d9751ba353-9085.png" />
+					</div>
+					<div class="ani ss ss3-23" swiper-animate-effect="slideLeft " swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+						<img src="img/side3/cc5b10fc-546a-4228-9634-72d9751ba353-9085.png" />
+					</div>
+				</div>
+
+				<!--------slide4-------->
+				<div class="swiper-slide swiper-slide4">
+					<div class="ss ss4-1"></div>
+					<div class="ani ss ss4-2" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+						<img src="img/side4/e28b3b66-7fc4-4bb9-8b8e-6d60cc03b35e-6150.png" />
+					</div>
+					<div class="ani ss ss4-3" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+						<img src="img/side4/9be02666-9f02-4d1a-90dd-d167ff831b62-5483.png" />
+					</div>
+					<div class="ss ss4-4">
+						<img src="img/side4/896b35b4-bae9-4122-8dde-16ae1343061d-6418.png" />
+					</div>
+					<div class="ani ss ss4-5" swiper-animate-effect="zoomInI" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+						<img src="img/side4/6dbb6b21-c234-4f44-9725-22b3660c18e7-7581.png" />
+					</div>
+					<div class="ani ss ss4-6" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+						<img src="img/side4/12f35041-c38a-437c-bf3e-23a1a9ccaab3-9937.png"/>
+					</div>
+					<div class="ani ss ss4-7" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+						<img src="img/side4/703e3eff-f296-4b8a-95d0-1bc30e2add65-2946.png"/>
+					</div>
+					<div class="ani ss ss4-8" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="4.5s">
+						<img src="img/side4/aff92a24-8754-419e-a93b-cdf959b6c694-2906.png" />
+					</div>
+					<div class="ani ss ss4-9" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="5.5s">
+						<img src="img/side4/63801410-0577-4d48-84e1-d48a3cb02c1e-7170.png"/>
+					</div>
+					<div class="ani ss ss4-10" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="4.5s">
+						<img src="img/side4/67fd7e2d-5c69-402c-9f19-d5bc80b7cad2-7211.png"/>
+					</div>
+					<div class="ani ss ss4-11" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="5.5s">
+						<img src="img/side4/c33ead06-d671-489f-87d8-5bb57089cc47-9632.png" />
+					</div>
+					<div class="ani ss ss4-12" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="3.5s">
+						<img src="img/side4/1a3543dc-d47e-4ead-8207-3cfa924f6fc1-3221.png" />
+					</div>
+					<div class="ani ss ss4-13" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="3.5s">
+						<img src="img/side4/00823a97-eb0d-4918-b82e-635c8639ef8a-5528.png" />
+					</div>
+					<div class="ani ss ss4-14" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+						<img src="img/side4/40b61eea-0b85-4c72-9168-020460c8a94a-9147.png" />
+					</div>
+					<div class="ani ss ss4-15" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+						<img src="img/side4/a0161753-8ff0-4f99-b913-92de60265844-0158.png" />
+					</div>
+					<div class="ani ss ss4-16" swiper-animate-effect="slideRight" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+						<img src="img/side4/8e76e041-e7c5-4c97-9fde-3a70c04aa750-1211.png" />
+					</div>
+					<div class="ani ss ss4-17" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="3.5s">
+						<div class="cmp-inner" style="color:#666666;font-family:黑体;line-height:0.56rem;text-align:center;">
+							<div style="color: rgb(255, 255, 255); font-size: 0.4rem;">原生</div>
+							<div style="color: rgb(255, 255, 255); font-size: 0.4rem;">Javascript</div>
+						</div>
+					</div>
+					<div class="ani ss ss4-18" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="4.5s">
+						<div class="cmp-inner" style="color:#666666;font-family:黑体;line-height:0.56rem;text-align:center;">
+							<div style="color: rgb(255, 255, 255);font-size: 0.4rem;">JQuery</div>
+						</div>
+					</div>
+					<div class="ani ss ss4-19" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="5.5s">
+						<div class="cmp-inner" style="color:#666666;font-family:黑体;line-height:0.56rem;text-align:center;">
+							<div style="color: rgb(255, 255, 255);font-size: 0.4rem;">Ajax</div>
+						</div>
+					</div>
+					<div class="ani ss ss4-20" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="5.5s">
+						<div class="cmp-inner" style="color:#666666;font-family:黑体;line-height:0.36rem;text-align:center;">
+							<div style="color: rgb(255, 255, 255);font-size: 0.4rem;">Angular</div>
+							<div style="color: rgb(255, 255, 255);font-size: 0.4rem;">js</div>
+						</div>
+					</div>
+					<div class="ani ss ss4-21" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="6.5s">
+						<div class="cmp-inner" style="color:#666666;font-family:黑体;line-height:0.36rem;text-align:center;">
+							<div style="color: rgb(255, 255, 255);font-size: 0.32rem;">Bootstrap</div>
+						</div>
+					</div>
+					<div class="ani ss ss4-22" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="6.5s">
+						<div class="cmp-inner" style="color:#666666;font-family:黑体;line-height:0.36rem;text-align:center;">
+							<div style="color: rgb(255, 255, 255);font-size: 0.4rem;">HTML5</div>
+							<div style="color: rgb(255, 255, 255);font-size: 0.4rem;">CSS3</div>
+						</div>
+					</div>
+					<div class="ani ss ss4-23" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="4.5s">
+						<div class="cmp-inner" style="color:#666666;font-family:黑体;line-height:0.36rem;text-align:center;">
+							<div style="color: rgb(255, 255, 255);font-size: 0.4rem;">Canvas</div>
+						</div>
+					</div>
+				</div>
+
+				<!--------slide5-------->
+				<div class="swiper-slide swiper-slide5">
+					<div class="ss ss5-1"></div>
+					<div class="ss ss5-2">
+						<img src="img/side5/8c1c1d3c-0de2-4c72-a49f-4fe393b10670-0384.png" />
+					</div>
+					<div class="ani ss ss5-3" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+						<img src="img/side5/07245ded-d8f6-41a4-8577-78c017a4ccf0-1620.png" />
+					</div>
+					<div class="ani ss ss5-4" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+						<img src="img/side5/be60b7b6-713a-408d-a087-cd38188d2e88-7797.png" />
+					</div>
+					<div class="ani ss ss5-5" swiper-animate-effect="rotate2d" swiper-animate-duration="0.6s" swiper-animate-delay="0.8s">
+						<img src="img/side5/6dd5866e-256f-4c0b-8372-a5762d0c16ec-6565.png" />
+					</div>
+					<div class="ani ss ss5-6" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+						<img src="img/side5/132c85fc-4fc8-45d0-9e95-3448588c7f0f-2427.png" />
+					</div>
+					<div class="ani ss ss5-7" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+						<div class="cmp-inner" style="color:#666666;font-size:0.96rem;opacity:1;font-family:黑体;line-height:2.4rem;">
+							<div style="color: rgb(32, 172, 198); font-family: 黑体; font-weight: 700; font-size: 0.96rem;">方式</div>
+						</div>
+					</div>
+					<div class="ani ss ss5-8" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+						<div class="cmp-inner" style="color:#666666;font-size:0.36rem;opacity:1;font-family:黑体;">
+							<div style="color: rgb(32, 172, 198); font-family: 黑体; font-weight: 700; font-size: 0.36rem;">contact&nbsp;</div>
+						</div>
+					</div>
+					<div class="ani ss ss5-9" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+						<div class="cmp-inner" style="color:#666666;font-size:0.36rem;opacity:1;font-family:黑体;">
+							<div style="color: rgb(32, 172, 198); font-family: 黑体; font-weight: 700; font-size: 0.36rem;">information</div>
+						</div>
+					</div>
+					<div class="ani ss ss5-10" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+						<div class="cmp-inner">18507008395</div>
+						<div class="cmp-inner">wyq_life@yeah.net</div>
+					</div>
+				</div>
+
+				<!--------slide6-------->
+
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+			<script>
+				var mySwiper = new Swiper('.swiper-container', {
+					direction: 'vertical',
+					effect: 'slide',
+					// 如果需要分页器
+					pagination: '.swiper-pagination',
+					mousewheelControl: true,
+					onInit: function(swiper) { //Swiper2.x的初始化是onFirstInit
+						swiperAnimateCache(swiper); //隐藏动画元素 
+						swiperAnimate(swiper); //初始化完成开始动画
+					},
+					onSlideChangeEnd: function(swiper) {
+						swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+					}
+				})
+			</script>
+	</body>
+
+</html>
